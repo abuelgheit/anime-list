@@ -15,3 +15,8 @@ jobs:
             - "node_modules"
       - run: xvfb-run -a npm run test-ci
       - run: xvfb-run -a npm run build
+  deployment:
+    staging:
+      branch: master
+      heroku:
+        appname: anime-list-900 # appname must not include upper-case characters
