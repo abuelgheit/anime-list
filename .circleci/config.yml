@@ -13,5 +13,5 @@ jobs:
           key: AngularCircleCI-{{ .Branch }}-{{ checksum "package.json" }}
           paths:
             - "node_modules"
-      - run: ng test --no-watch --no-progress --browsers=ChromeHeadlessCI
+      - run: xvfb-run -a npm run test-ci
       - run: xvfb-run -a npm run build
