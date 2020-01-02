@@ -8,7 +8,8 @@
     "test": "ng test",
     "test-ci": "ng test --browsers ChromeHeadlessCI --watch=false",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "heroku-start": "ng build"
   },
   "private": true,
   "dependencies": {
